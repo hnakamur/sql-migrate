@@ -1,0 +1,18 @@
+# nfpm config file for sql-migrate
+name: "sql-migrate"
+arch: "amd64"
+platform: "linux"
+version: "${SQL_MIGRATE_VERSION}"
+section: "default"
+priority: "extra"
+provides:
+- sql-migrate
+maintainer: "Hiroaki Nakamura <hnakamur@gmail.com>"
+description: |
+  SQL schema migration tool for Go.
+vendor: "http://github.com/hnakamur/sql-migrate"
+homepage: "http://github.com/rubenv/sql-migrate"
+license: "MIT"
+bindir: "/usr/bin"
+files:
+  ./sql-migrate/sql-migrate: "/usr/bin/sql-migrate"
